@@ -1,12 +1,12 @@
 # Personal website: Engineering Notebook
 
-Status: initial implementation brief, 6 October 2026.
+Status: updated for the NovaLab YC application, 1 November 2026 (UTC).
 The owner selected Engineering Notebook. Exact tokens and composition below are proposed implementation defaults; refine them through screenshot review.
 Repository: https://github.com/Doppamine/PersonalWebsite
 
 ## Purpose and audience
 
-A personal website for Beksultan Baimagambetov, with the immediate use of supporting a YC founder profile. Help visitors understand his engineering focus, actual contributions, technical judgment, and personality. It should also remain useful to collaborators and employers.
+A personal website for Beksultan Baimagambetov, with the immediate use of supporting his YC founder profile as NovaLab's CTO and co-founder. Help visitors understand his engineering focus, actual contributions, technical judgment, and personality. It should also remain useful to collaborators and employers.
 
 Success: the first viewport explains who Beksultan is and what he does; one short scroll reaches substantive work. Project details distinguish individual contributions from team outcomes. Interested visitors can reach GitHub and contact information without completing the whole narrative.
 
@@ -59,7 +59,8 @@ Hero:
 - Small descriptor: Backend / Infrastructure / Full-stack.
 - Name: Beksultan Baimagambetov.
 - Primary sentence: "I turn unfamiliar problems into working systems."
-- Short introduction from CONTENT.md.
+- Short introduction from CONTENT.md identifying him as CTO and co-founder of NovaLab.
+- Keep backend, infrastructure, and full-stack strengths visible; this is a personal engineering site.
 - Primary action: "Explore my work", pointing to selected work.
 - Secondary action: "GitHub", using the verified profile URL.
 - A modest real portrait may sit to the right when supplied. Until then, compose an intentional text-only hero. Do not invent a portrait or show a broken image placeholder.
@@ -69,9 +70,9 @@ Use approximately two-thirds of a desktop viewport, not a mandatory full-screen 
 ### 2. Selected work
 
 Present up to three meaningful entries, not a uniform dashboard grid:
-1. NovaLab: initial educational prototype and technical ownership.
+1. NovaLab: active physics education MVP, Beksultan's engineering contribution, and preparation for its first school pilot.
 2. KeyGroup: production engineering, when a publishable example is identified.
-3. One backend project selected after evidence review.
+3. One backend/full-stack project selected after evidence and ownership review.
 
 Each entry includes:
 - Project name, role, and concise context.
@@ -84,20 +85,28 @@ Use short summaries first. Longer engineering notes can be in-page details or se
 
 A real product screenshot or small annotated diagram can anchor each entry. If no asset exists, use a well-composed text entry. Never fabricate a product UI, benchmark, uptime figure, customer count, or incident.
 
-### 3. Currently exploring
+#### NovaLab entry composition
 
-A compact, visually secondary AI Builders section.
-Display "Idea stage" clearly. Explain the proposed standardized 1v1 format and Beksultan's intended technical responsibility.
-No architecture showcase, fake dashboard, live status, test results, or claims of a working platform.
+Give NovaLab the largest project entry. Use margin labels such as "Context", "My contribution", and "Next validation". Lead with the learning problem and a short product explanation, then describe Beksultan's supported contributions.
 
-### 4. About
+Separate the original React/Three.js prototype from the current web MVP with Unity WebGL laboratories. Do not imply the old prototype screenshot represents today's platform or that Beksultan authored every current component.
+
+Include a compact status note: "MVP / First school pilot planned for 3 November 2026." Confirm the status before launch, especially on or after that date. Do not turn a scheduled date into a claim that the pilot started.
+
+A real screenshot can show a laboratory or teacher lesson workflow once supplied and cleared for publication. A small conceptual diagram may explain teacher assignment -> student experiment -> recorded result; label it as a product-flow illustration. Do not embed Unity or recreate the product in the personal website.
+
+Keep the pilot's hypothesis distinct from measured results. No improvement chart, traction counter, customer-logo wall, or implied paid school adoption. An optional technical note can discuss one confirmed constraint or decision, such as classroom reliability or minimizing student identifiers.
+
+AI Builders is outside the current homepage scope. Do not render the former "Currently exploring" section.
+
+### 3. About
 
 A brief personal introduction, education, and compact experience timeline.
 Use the publishable draft in CONTENT.md. More personal storytelling is optional and requires owner-selected wording. Keep this section human and direct, without motivational slogans.
 
 A debugging case study or "How I work" section may be added after a specific evidenced incident is supplied. It is not required for the first version.
 
-### 5. Contact
+### 4. Contact
 
 GitHub plus email, LinkedIn, and downloadable CV when their publication targets are confirmed.
 Never ship placeholder links or an unconnected contact form.
@@ -130,12 +139,14 @@ When the owner gives the implementation prompt:
 - Show desktop and mobile screenshots for composition review before expanding into more project detail.
 - Choose a lightweight static-first implementation compatible with Vercel; preserve an existing stack if one is present.
 - No CMS, database, authentication, analytics, or contact backend is needed for this draft.
+- NovaLab's product stack is case-study content, not a requirement to use that stack for this website.
 
 ## Review criteria
 
 - Engineering Notebook identity is visible in typography, spacing, margin notes, and content structure.
 - Name and engineering focus are immediately understandable.
-- Real work precedes AI Builders.
+- NovaLab is the lead case study, with individual ownership, current MVP capabilities, and planned validation clearly distinguished.
+- No AI Builders section is rendered.
 - No invented claims, anonymous placeholders, broken links, or clipped text.
 - Check at roughly 1440px, 768px, and 390px, plus keyboard navigation and reduced motion.
 - Once an implementation exists, run its build and a bounded browser review. Do not write tests that merely restate styling values.
