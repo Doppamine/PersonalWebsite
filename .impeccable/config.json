@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-01T20:11:50.182Z",
+        "reason": "Project brief: DESIGN.md line 36 explicitly specifies locally bundled or framework-managed Inter for headings and body; the user instructed implementation to follow DESIGN.md closely."
+      }
+    ]
+  }
+}

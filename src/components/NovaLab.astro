@@ -1,0 +1,53 @@
+---
+import { novaLab } from '../content/home';
+import NotebookRow from './NotebookRow.astro';
+---
+<section id="work" class="work" aria-labelledby="novalab-title" tabindex="-1">
+  <NotebookRow label="Selected work" class="project-heading">
+    <div class="project-title-line">
+      <h2 id="novalab-title">{novaLab.name}<span class="project-period" aria-hidden="true">.</span></h2>
+      <p class="project-role">{novaLab.role}</p>
+    </div>
+    <p class="project-subtitle">Interactive physics labs for schools</p>
+    <p class="project-status"><span class="status-mark" aria-hidden="true"></span>{novaLab.status}</p>
+  </NotebookRow>
+
+  <NotebookRow label="Context" class="project-row">
+    <p class="lead">{novaLab.description}</p>
+    <p>{novaLab.purpose}</p>
+    <figure class="product-flow">
+      <figcaption>Product flow <span> / conceptual illustration</span></figcaption>
+      <ol>
+        <li><span class="flow-actor">Teacher</span><span class="flow-action">Assign a lesson</span></li>
+        <li><span class="flow-actor">Student</span><span class="flow-action">Run an experiment</span></li>
+        <li><span class="flow-actor">Teacher</span><span class="flow-action">Review results</span></li>
+      </ol>
+    </figure>
+  </NotebookRow>
+
+  <NotebookRow label="My contribution" class="project-row contribution-row">
+    <h3>From the first prototype.</h3>
+    <p>{novaLab.contribution}</p>
+    <p>{novaLab.historicalWork}</p>
+    <p class="prototype-tech">Original prototype <span>React / Three.js</span></p>
+  </NotebookRow>
+
+  <NotebookRow label="Current product" class="project-row">
+    <h3>Today, a team-built MVP.</h3>
+    <p>{novaLab.mvp}</p>
+    <dl class="stack-list">
+      <dt>Platform stack</dt>
+      <dd>{novaLab.stack.join(' · ')}</dd>
+    </dl>
+  </NotebookRow>
+
+  <NotebookRow label="Next validation" class="project-row validation-row">
+    <h3>Taking the idea into the classroom.</h3>
+    <p>{novaLab.pilot}</p>
+    <div class="pilot-note">
+      <p class="pilot-date">Planned for <time datetime="2026-11-03">3 November 2026</time></p>
+      <p>{novaLab.hypothesis}</p>
+      <p class="hypothesis-note">A learning hypothesis, to be tested in the pilot.</p>
+    </div>
+  </NotebookRow>
+</section>

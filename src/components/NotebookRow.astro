@@ -1,0 +1,8 @@
+---
+interface Props { label: string; class?: string; }
+const { label, class: className } = Astro.props;
+---
+<div class:list={['notebook-row', className]}>
+  <div class="margin-note"><span>{label}</span></div>
+  <div class="row-content"><slot /></div>
+</div>
